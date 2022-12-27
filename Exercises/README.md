@@ -3,4 +3,4 @@ Java exercises to consolidate knowledge:
 
 * [Tipical](https://github.com/AlvaroSilva94/Java/tree/main/Exercises/Tipical)
 * [Interface use](https://github.com/AlvaroSilva94/Java/tree/main/Exercises/Interfaces)
-* [Java EE JPA/Hibernate with Maven]()
+* [Java EE JPA/Hibernate with Maven](https://github.com/AlvaroSilva94/Java/tree/main/Exercises/JPA_exercise)
