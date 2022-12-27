@@ -1,2 +1,2 @@
 # Java
-Java exercices to consolidate knowledge
+Java projects and other to practise java knowledge
