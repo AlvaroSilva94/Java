@@ -1,7 +1,7 @@
 # Skateboard online shop service
 
 Java Web services project with Spring boot, RestAPIs and JPA/Hibernate
-- User Insertion, Deletion, Order placing, Payment, etc... was done using Postman
+- User Insertion, Deletion, Order placing, Payment, etc... was tested using Postman
 - Since Heroku is no longer free, won't be testing this with a dev profile but only with a test profile
 - Technologies used: Spring boot, Maven, JPA/Hibernate, Rest APIs, H2 Database, SQL, XML, JAVA EE, Postman, XAMPP
 
