@@ -1,8 +1,0 @@
-# Spring Boot project with Maven and JPA /Hibernate
-Java Web services project with Spring boot, RestAPIs and JPA/Hibernate
-
-Notes to self:
-- The basis for the project is created in [Spring Initializr](https://start.spring.io/) and imported to Spring tool suite;
-- To verify execution, go to localhost:8080;
-- H2 is a java database that is usable and already built in;
-- Everytime a new dependência is added to pom.xml, in STS go to Project -> Clean to force Maven to download that dependency;

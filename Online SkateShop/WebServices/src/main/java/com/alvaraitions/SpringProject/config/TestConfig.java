@@ -47,17 +47,19 @@ public class TestConfig implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Category cat1 = new Category(null,"Electronics");
-		Category cat2 = new Category(null,"Books");
-		Category cat3 = new Category(null,"Computers");
+		Category cat1 = new Category(null, "Boards");
+		Category cat2 = new Category(null, "Wheels");
+		Category cat3 = new Category(null, "Trucks");
+		Category cat4 = new Category(null, "Bushings");
+		Category cat5 = new Category(null, "Griptape and Hardware");
 		
-		Product p1 = new Product(null, "The Lord of the Rings", "Lorem ipsum dolor sit amet, consectetur.", 90.5, "");
-		Product p2 = new Product(null, "Smart TV", "Nulla eu imperdiet purus. Maecenas ante.", 2190.0, "");
-		Product p3 = new Product(null, "Macbook Pro", "Nam eleifend maximus tortor, at mollis.", 1250.0, "");
-		Product p4 = new Product(null, "PC Gamer", "Donec aliquet odio ac rhoncus cursus.", 1200.0, "");
-		Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
+		Product p1 = new Product(null, "Toy machine 8.25 deck", "Medium concave", 90.5, "");
+		Product p2 = new Product(null, "Spitfire Formula 4 52mm 99a", "Great wheels", 59.0, "");
+		Product p3 = new Product(null, "Tensor Mag Lights 149 pro", "Lighter trucks than normal", 125.0, "");
+		Product p4 = new Product(null, "Bones bushings 91a", "Hardness: hard", 12.0, "");
+		Product p5 = new Product(null, "Basic griptape", "Color: black", 1.99, "");
 		
-		categoryRepository.saveAll(Arrays.asList(cat1,cat2,cat3));
+		categoryRepository.saveAll(Arrays.asList(cat1,cat2,cat3, cat4, cat5));
 		productRepository.saveAll(Arrays.asList(p1,p2,p3,p4,p5));
 		
 		//Association between objects
@@ -70,8 +72,8 @@ public class TestConfig implements CommandLineRunner {
 		
 		productRepository.saveAll(Arrays.asList(p1,p2,p3,p4,p5));
 		
-		User u1 = new User(null,"Ze Balofo","fatlover@gmail.com", "99999999", "123456");
-		User u2 = new User(null,"Ze Lingrinhas", "skinnylover@gmail.com", "99988888", "123456");
+		User u1 = new User(null,"New Skater","newSk8@gmail.com", "99999999", "123456");
+		User u2 = new User(null,"Old Skater", "oldSk8@gmail.com", "99988888", "123456");
 	
 		Order o1 = new Order(null,Instant.parse("2022-06-20T19:53:07Z"), OrderStatus.PAID, u1);
 		Order o2 = new Order(null,Instant.parse("2021-07-20T19:53:07Z"), OrderStatus.WAITING_PAYMENT, u2);
